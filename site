@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choveu Abriu</title>
+<style>
+    h1 {
+    color: rgba(41, 85, 206, 0.705);
+}
+</style>
 </head>
 <body>
     <h1>Choveu Abriu</h1>
