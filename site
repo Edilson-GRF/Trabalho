@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choveu Abriu</title>
-<style>
+    <style>
 .x{color: rgb(0, 76, 216);}
 .y{color: rgb(170, 170, 21);}
 </style>
 </head>
 <body>
-    <h1 class="x">Choveu Abriu</h1>
+        <h1 class="x">Choveu Abriu</h1>
     <p>Bem-vindo ao site Choveu Abriu! Aqui você encontrará informações sobre o clima, dicas para dias chuvosos e muito mais. Fique à vontade para explorar nosso conteúdo e compartilhar suas experiências conosco!</p>
     <br>
+    <h2>Descrição da criação do aplicativo</h2>
+    <p>O aplicativo Choveu Abriu foi desenvolvido com o objetivo de organizar as denuncias de problemas relacionados a organização viária e melhoria da infraestrutura urbana.</p>
 </body>
 </html>
