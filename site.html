@@ -6,90 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choveu Abriu</title>
     <style>
-        .x {
-            color: rgb(0, 76, 216);
-        }
-
-        .y {
-            color: #ffcc00;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h2 {
-            color: #ffd21c
-        }
-
-        body {
+        .x { color: rgb(0, 76, 216); }
+        .y { color: #ffcc00; }
+        h1 { text-align: center; }
+        h2 { color: #ffd21c; }
+        .u {
             color: white;
             background-color: #0022ff;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            background: #1e2855;
+            padding: 12px 20px;
+            color: #ffd21c;
+        }
+        .navbar a { color: #ffd21c; text-decoration: none; }
+        .brand { font-weight: bold; font-size: 1.1rem; }
+
+        .nav-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 18px;
+        }
+        .nav-menu > li { position: relative; }
+        .nav-menu a:hover { opacity: 0.8; }
+
+        .dropdown-menu {
+            list-style: none;
+            margin: 0;
+            padding: 8px 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #1e2855;
+            min-width: 180px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 4px;
+            display: none;
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 16px;
+            color: #ffd21c;
+        }
+        .dropdown-menu li a:hover { background: #ffd21c; }
+        .dropdown:hover .dropdown-menu { display: block; }
+
+        .nav-search {
+            margin-left: auto;
+            display: flex;
+            gap: 8px;
+        }
+        .nav-search input {
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        .nav-search button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            background: #ffd21c;
+            cursor: pointer;
         }
     </style>
 </head>
 
-<body>
+<body class="u">
+    <header>
+        <nav class="navbar">
+            <a href="#" class="brand">Choveu Abriu</a>
+            <ul class="nav-menu">
+                <li><a href="#">início</a></li>
+                <li><a href="#">Conheça o app</a></li>
+                <li class="dropdown">
+                    <a href="#">Como surgiu ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">História</a></li>
+                        <li><a href="#">Quem somos nós</a></li>
+                        <li><a href="#">Nosso objetivo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <form class="nav-search">
+                <input type="search" placeholder="Procure aqui">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+
     <h1 class="y">Choveu Abriu</h1>
-    <p>Bem-vindo ao site Choveu Abriu! Aqui você encontrará informações sobre o clima, dicas para dias chuvosos e muito
-        mais. Fique à vontade para explorar nosso conteúdo e compartilhar suas experiências conosco!</p>
-    <br>
+    <p>Bem-vindo ao site Choveu Abriu! Aqui você encontrará informações sobre o clima, dicas para dias chuvosos e muito mais. Fique à vontade para explorar nosso conteúdo e compartilhar suas experiências conosco!</p>
+
     <h2>História do aplicativo</h2>
-    <p>O aplicativo Choveu Abriu surgiu a partir de um problema frequente vivido pela população da cidade de Palmas-TO:
-        buracos, ruas alagadas e outros problemas urbanos que demoravam para ser resolvidos. Em períodos de chuva,
-        muitos moradores enfrentavam dificuldades para se locomover, além de prejuízos em veículos e riscos de
-        acidentes.
+    <p>O aplicativo Choveu Abriu surgiu a partir de um problema frequente vivido pela população da cidade de Palmas-TO: buracos, ruas alagadas e outros problemas urbanos que demoravam para ser resolvidos...</p>
 
-        As denúncias eram feitas principalmente por aplicativos de mensagem, como WhatsApp, o que dificultava a
-        organização, o acompanhamento e a priorização dos problemas pela prefeitura. Muitas vezes, a população não
-        recebia retorno sobre as reclamações realizadas, gerando sensação de abandono e falta de comunicação entre
-        cidadãos e poder público.
-
-        Diante dessa necessidade, surgiu a ideia do Choveu Abriu, uma plataforma inteligente que conecta população e
-        prefeitura de forma rápida e organizada. Com o aplicativo, os cidadãos podem registrar problemas urbanos com
-        fotos e localização, enquanto os órgãos responsáveis conseguem visualizar, organizar e resolver as demandas com
-        mais eficiência, promovendo uma cidade mais segura, moderna e participativa.</p>
     <h2>Objetivo da criação</h2>
-    <p>O aplicativo Choveu Abriu foi desenvolvido com o objetivo de organizar as denuncias de problemas relacionados a
-        organização viária e melhoria da infraestrutura urbana.</p>
-    <br>
+    <p>O aplicativo Choveu Abriu foi desenvolvido com o objetivo de organizar as denuncias de problemas relacionados a organização viária e melhoria da infraestrutura urbana.</p>
+
     <h2>Dor para o desenvolvimento</h2>
-    <p>A dor para a criação do aplicativo surgiu da necessidade de ter um meio eficiente para os cidadãos reportarem
-        problemas relacionados à organização viária e à infraestrutura urbana. Muitas vezes, as pessoas enfrentam
-        dificuldades para encontrar canais adequados para denunciar esses problemas, o que pode levar a atrasos na
-        resolução e à frustração dos cidadãos.</p>
-    <br>
+    <p>A dor para a criação do aplicativo surgiu da necessidade de ter um meio eficiente para os cidadãos reportarem problemas relacionados à organização viária e à infraestrutura urbana...</p>
+
     <h2>Problemas da cidade</h2>
-    <ol>Buracos nas ruas e avenidas</ol>
-    <p>Os buracos são um dos principais problemas urbanos de Palmas, principalmente após períodos de chuvas. Causando
-        danos em carros e motos, aumentam o risco de acidentes e dificultam o trãnsito.</p>
-    <ol>Alagamentos</ol>
-    <p>Durante fortes chuvas, algumas regiões da cidade sofrem com acúmulo de água nas ruas, dificultando a passagem de
-        veículos e pedestres aumentando o risco de acidentes podendo causar prejuízos para moradores e comerciantes.</p>
-    <ol>Falta de iluminação pública</ol>
-    <p>A falta de iluminação aumenta o risco de acidentes, assaltos e dificulta a circulação de pessoas em bairros e
-        avenidas.</p>
-    <ol>Ácumulo de lixo em áreas inapropriadas</ol>
-    <p>Lixos acumulados em terrenos sem limpeza prejudicam a aparência da cidade e atraem insetos que podem causas
-        doenças.</p>
-    <ol>Falta de retorno para os cidadãos</ol>
-    <p>Grande parte da população não recebe informações sobre o andamento das denúncias realizadas, gerando sensação de
-        abandono e falta de transparência.</p>
+
+    <h3>Buracos nas ruas e avenidas</h3>
+    <p>Os buracos são um dos principais problemas urbanos de Palmas, principalmente após períodos de chuvas...</p>
+
+    <h3>Alagamentos</h3>
+    <p>Durante fortes chuvas, algumas regiões da cidade sofrem com acúmulo de água nas ruas...</p>
+
+    <h3>Falta de iluminação pública</h3>
+    <p>A falta de iluminação aumenta o risco de acidentes, assaltos e dificulta a circulação de pessoas em bairros e avenidas.</p>
+
+    <h3>Acúmulo de lixo em áreas inapropriadas</h3>
+    <p>Lixos acumulados em terrenos sem limpeza prejudicam a aparência da cidade e atraem insetos que podem causar doenças.</p>
+
+    <h3>Falta de retorno para os cidadãos</h3>
+    <p>Grande parte da população não recebe informações sobre o andamento das denúncias realizadas...</p>
+
     <h2>Soluções que o nosso aplicativo oferece</h2>
-    <ol>Registro rápido de problemas urbanos</ol>
-    <p>O cidadão pode denunciar buracos, alagamentos, lixo, iluminação e outros problemas diretamente pelo aplicativos.
-    </p>
-    <ol>Envio de foto e localização</ol>
+
+    <h3>Registro rápido de problemas urbanos</h3>
+    <p>O cidadão pode denunciar buracos, alagamentos, lixo, iluminação e outros problemas diretamente pelo aplicativo.</p>
+
+    <h3>Envio de foto e localização</h3>
     <p>A denúncia é enviada com imagem e geolocalização automática, facilitando identificar o local exato.</p>
-    <ol>Organização por categorias</ol>
+
+    <h3>Organização por categorias</h3>
     <p>Os problemas ficam separados por tipo, ajudando a prefeitura a priorizar os mais urgentes.</p>
-    <ol>Acompanhamento em tempo real</ol>
-    <p>O usuário consegue acompanhar o status da denúncia, podendo ver se está em análise, em andamento e finalizado.
-    </p>
-    <ol>Mais transparência e agilidade</ol>
-    <P>A população vai receber retorno sobre as solicitações e a prefeitura consegue organizar melhor os atendimentos.
-    </P>
-    <ol>Painel administrativo para órgãos públicos</ol>
+
+    <h3>Acompanhamento em tempo real</h3>
+    <p>O usuário consegue acompanhar o status da denúncia, podendo ver se está em análise, em andamento e finalizado.</p>
+
+    <h3>Mais transparência e agilidade</h3>
+    <p>A população vai receber retorno sobre as solicitações e a prefeitura consegue organizar melhor os atendimentos.</p>
+
+    <h3>Painel administrativo para órgãos públicos</h3>
     <p>A prefeitura pode visualizar, organizar e atualizar as ocorrências de forma centralizada.</p>
 </body>
 
