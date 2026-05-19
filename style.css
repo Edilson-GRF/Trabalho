@@ -87,3 +87,20 @@ body { margin: 0; font-family: system-ui, sans-serif; }
     width: 350px;
     margin: 20px auto;
 }
+
+
+.btn {
+    padding: 10px 20px;
+    background: #1e2855;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.btn:hover {
+    background: #2f3f88;
+}
+  
